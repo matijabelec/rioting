@@ -19,28 +19,16 @@
 	<body>
 		<my-app></my-app>
 
-		<script type="riot/tag" src="/app/views/app.tag"></script>
+		<!--<script src="/app/library/polyfills/polyfill.min.js"></script>--><!-- <script src="https://cdn.polyfill.io/v1/polyfill.min.js"></script> -->
+		<!--<script src="/app/library/aja/aja.min.js"></script>--><!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/aja/0.4.1/aja.min.js"></script> -->
+		<!--<script src="/app/library/riot/riot+compiler.min.js"></script>--><!-- <script src="https://cdn.jsdelivr.net/riot/3.0/riot+compiler.min.js"></script> -->
 
-    <script type="riot/tag" src="/app/views/_partials/navigation.tag"></script>
-    <script type="riot/tag" src="/app/views/_partials/header.tag"></script>
-    <script type="riot/tag" src="/app/views/_partials/footer.tag"></script>
+		<script src="//cdn.polyfill.io/v1/polyfill.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/aja/0.4.1/aja.min.js"></script>
+		<script src="//cdn.jsdelivr.net/riot/3.0.2/riot.min.js"></script>
+		<script src="//cdn.jsdelivr.net/riot-route/3.0.2/route.min.js"></script>
 
-    <script type="riot/tag" src="/app/views/_pages/404.tag"></script>
-    <script type="riot/tag" src="/app/views/_pages/home.tag"></script>
-    <script type="riot/tag" src="/app/views/_pages/administration.tag"></script>
-    <script type="riot/tag" src="/app/views/_pages/schedules.tag"></script>
-
-    <script type="riot/tag" src="/app/views/users/users-list.tag"></script>
-    <script type="riot/tag" src="/app/views/users/user-form.tag"></script>
-
-		<script src="/app/library/polyfills/polyfill.min.js"></script><!-- <script src="https://cdn.polyfill.io/v1/polyfill.min.js"></script> -->
-		<script src="/app/library/aja/aja.min.js"></script><!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/aja/0.4.1/aja.min.js"></script> -->
-		<script src="/app/library/riot/riot+compiler.min.js"></script><!-- <script src="https://cdn.jsdelivr.net/riot/3.0/riot+compiler.min.js"></script> -->
-		<script src="/app/library/riot/route.min.js"></script>
-		<script>
-      riot.compile(function(){
-        riot.mount('my-app');
-      });
-    </script>
+		<script src="/app/tags.js"></script>
+		<script>riot.mount('my-app');</script>
 	</body>
 </html>
