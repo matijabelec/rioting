@@ -1,0 +1,16 @@
+@font-face {
+  font-family: ArchivoBlack;
+  src: url("/app/styles/fonts/archivo-black.otf") format("opentype");
+}
+
+html, body{
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #e2d4b7;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'ArchivoBlack', sans-serif;
+}
